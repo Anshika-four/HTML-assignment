@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FORM</title>
+		<style>
+			body {
+    			margin: 0;
+    			height: 100vh;   
+    			display: flex;
+    			justify-content: center; 
+    			align-items: center;     
+  			}
+			.form-row{
+				display:flex;
+				margin-top: 20px;
+				margin-left: 10px;
+				gap: 30px;
+
+			}
+			.form-field{
+				display: flex;
+				flex-direction: column;
+			}
+			form{
+				width: 50%;
+				border: 1px solid black;
+			}
+			button{
+				margin-top: 20px;
+				margin-bottom: 20px;
+				margin-left: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<div class="form-row">
+				<div class="form-field">
+					<label for="first-name">First Name: </label>
+					<input type="text" id="first-name">
+				</div>
+				<div class="form-field">
+					<label for="last-name">Last Name: </label>
+					<input type="text" id="last-name">
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="form-field">
+					<label for="email">Email: </label>
+					<input type="email" id="email">
+				</div>
+				<div class="form-field">
+					<label for="number">Contact Number: </label>
+					<input type="tel" id="number">
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="form-field">
+					<label for="user-name">User Name: </label>
+					<input type="text" id="user-name">
+				</div>
+				<div class="form-field">
+					<label for="password">Password: </label>
+					<input type="password" id="password">
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="form-field">
+					<label for="address">Address: </label>
+					<textarea type="text" id="address"></textarea>
+				</div>
+				<div class="form-field">
+					<label for="gender">Gender: </label>
+						<div class='form-row'>
+							<label>
+								<input type="radio" name="gender" value="male">Male
+							</label> 
+							<label>
+								<input type="radio" name="gender" value="female">Female
+							</label>
+						</div>
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="form-field">
+					<label for="qualification">Qualification</label>
+					<select style="width: 170px" id="qualification">
+						<option value="">--Select</option>
+						<option value="10th">10th pass</option>
+						<option value="12th">12th pass</option>
+						<option value="diploma">Diploma</option>
+						<option value="graduate">Graduation</option>
+						<option value="postgraduate">Post Graduation</option>
+					</select>
+				</div>
+
+				<div class="form-field">
+					<label for="experience">Experience: </label>
+					<select style="width: 170px;" id="experience">
+						<option value="">--Select</option>
+						<option value="0">0 year</option>
+						<option value="1">1 year</option>
+						<option value="2">2 years</option>
+						<option value="3">3 years</option>
+						<option value="4">4 years</option>
+						<option value="5+">5+ years</option>
+					</select>
+				</div>
+
+
+			</div>
+
+			<div class="form-row">
+				<label>Coding Languages: </label>
+				<label for="c/c++">
+					<input type="checkbox" name="coding" value="c/c++" id="c/c++">C/C++</label>
+				<label for="java">
+					<input type="checkbox" name="coding" value="java" id="java">Java
+				</label>
+				<label for="c#">
+					<input type="checkbox" name="coding" value="c#" id="c#">C#</label>
+				<label for="PHP">
+					<input type="checkbox" name="coding" value="PHP" id="PHP">PHP</label>
+				<label for="python">
+					<input type="checkbox" name="coding" value="python">Python</label>
+
+			</div>
+			<button type="submit">Submit</button>
+		</form>
+	</body>
+</html>
